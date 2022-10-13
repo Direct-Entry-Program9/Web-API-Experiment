@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    overflow: hidden;
+}
+#content-wrapper{
+    position: absolute;
+    width: 30%;
+    height: 100%;
+    background-color: aqua;
+    overflow: hidden;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#road{
+    width: 100%;
+    height: 300%;
+    background-image: url(../images/road.jpg);
+    background-size: 100% 20%;
+    background-repeat: repeat-y;
+    position: absolute;
+    top: -200%;
+}
+.car{
+    width: 60px;
+    height: 120px;
+    // background-color: orange;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#myCar{
+    background-image: url(../images/car1.png);
+    bottom: 20px;
+    left: 15%;
+    // transition: left 100ms;
+}
+#police1{
+    position: absolute;
+    background-image: url(/images/police1.png);
+    left: 73%;
+}
+#police2{
+    position: absolute;
+    background-image: url(/images/police2.png);
+    left: 55%;
+}
+#car1{
+    position: absolute;
+    background-image: url(/images/car2.png);
+    left: 30%;
+}
+
+#start-page{
+    width: 100%;
+    height: 100%;
+    background-color: #bfbfbfc7;
+    z-index: 1;
+    position: absolute;
+    transition: opacity 400ms;
+}
+#popup{
+    height: 50%;
+    width: 35%;
+    background-color: aqua;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+h1{
+    font-size: 50px;
+    line-height: 70px;
+}
+#logo{
+    padding: 30px;
+}
+#logo>img{
+    width: 120px;
+}
+button{
+    width: 150px;
+    height: 60px;
+    font-size: 30px;
+    color: rgb(24, 22, 22);
+    background-color: #bfbfbf;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    font-weight: bold;
+}
+button:hover{
+    background-color: #007fff;
+    color: #faf1f1;
+    box-shadow: 3px 3px 8px 2px;
+    cursor: pointer;
+}
+mark{
+    border-radius: 15px;
+    color: #0044ff;
+    background-color: aqua;
+}
+
+.background{
+    position: absolute;
+    width: 35%;
+    height: 300%;
+    background-color: #2e1f03;
+}
+
+#right-background{
+    right: 0;
+}
